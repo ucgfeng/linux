@@ -1,0 +1,60 @@
+这就可以了，什么情况。不懂呀
+在下面文件里配置了三行
+~/.pam_environment
+
+GTK_IM_MODULE DEFAULT=fcitx
+QT_IM_MODULE  DEFAULT=fcitx
+XMODIFIERS    DEFAULT=\@im=fcitx
+
+在~/.xinitrc
+文件 最上面也添加了这几行
+
+
+ibus输入法，安装了 ibus ibus-table ibus-table-chinese
+在当前目录下创建 .xprofile文件
+并添加以下四行代码
+
+export GTK_IM_MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT_IM_MODULE=ibus
+
+ibus-daemon -x -d
+
+之后重启就可以了
+
+
+
+fcitx的安装和配置
+sudo pacman -S fcitx  fcitx-im fcitx-configtool
+kde要安装 kcm-fcitx
+
+自启用
+vim ~/.pam_environment
+
+GTK_IM_MODULE DEFAULT=fcitx
+QT_IM_MODULE  DEFAULT=fcitx
+XMODIFIERS    DEFAULT=\@im=fcitx
+
+重新登录后让环境变量生效。
+如果 fcitx 没有自动启动，请将 fcitx & 加入 ~/.xinitrc, 如果 fcitx & 不启动，在后面加一个延时 sleep 2。
+
+fcitx5的安装和配置
+sudo pacman -S fcitx5 fcitx5-im fcitx5-configtool
+kde要安装 kcm-fcitx
+
+自启用
+vim ~/.pam_environment
+
+GTK_IM_MODULE DEFAULT=fcitx
+QT_IM_MODULE  DEFAULT=fcitx
+XMODIFIERS    DEFAULT=\@im=fcitx
+
+重新登录后让环境变量生效。
+如果 fcitx 没有自动启动，请将 fcitx & 加入 ~/.xinitrc, 如果 fcitx & 不启动，在后面加一个延时 sleep 2。
+
+安装五笔
+fcitx5-chinese-addons
+
+重新启动
+ctrl+space启动
+ctrl+shift切换输入法

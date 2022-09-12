@@ -1,0 +1,685 @@
+archlinux用 的这个archlinuxcn仓库
+paru
+
+简介
+Arch Linux 中文社区仓库是由 Arch Linux 中文社区驱动的非官方用户仓库。包含中文用户常用软件、工具、字体/美化包等。
+仓库地址：http://repo.archlinuxcn.org
+使用说明
+在 /etc/pacman.conf 文件末尾添加两行：
+[archlinuxcn]
+Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
+然后请安装 archlinuxcn-keyring 包以导入 GPG key。
+
+pacman用法
+pacman -S -Sy -Syy -Syyu -Ss搜索 -Sc 清缓存
+       -R -Rs删除依赖 -Rns 删除全局配置文件 通常和以下命令一起用(sudo pacman -R $(pacman -Qdtq))
+       -Q | wc-l多少个软件 -Qe 自己安装的  －Qeq 不显示版本号 -Qs 本地安装的  －Qdt 不再需要的依赖
+
+补丁安装教程：
+https://www.exception.site/essay/how-to-free-use-intellij-idea-2019-3
+
+补丁网盘链接:
+链接：https://pan.baidu.com/s/11ixGPP2KNzQJG5JGCj8Oxg 提取码：1111
+
+备用链接:
+链接：https://pan.baidu.com/s/1nK0gy0evMlEq1L0lz7UKLg 提取码：2222
+
+无限速蓝奏云网盘
+链接：https://wwe.lanzoul.com/ikV6Szw3mre
+————
+若网盘链接失效，请添加我的微信告知，我会第一时间更新~
+
+PS: 持续关注小哈，若新版本 IDEA 激活失效，可第一时间获取最新的激活补丁哟~
+
+kde不能启动tim
+安装gnome-settings-daemon 并启动 /usr/lib/gsd-xsettings
+
+archlinux 安装软件   
+搜索软件fsearch
+有道词典youdao-dict
+浏览器firefox chromium
+deepin-wine-qq 9.5.2.27897-1
+qqc2-desktop-style 5.95.0-1
+deepin-wine-wechat 3.7.0.30-1
+tomcat8 要配置用户组
+输入法用的是ibus
+typora
+网易云音乐netease-cloud-music
+vscode
+视频播放软件 vlc
+电池优化tlp
+计算器kCalc
+markdown ghostwriter
+wps
+
+镜像源 中国的全部写到/etc/pacman.d/mirrorlist
+## China
+Server = http://mirrors.163.com/archlinux/$repo/os/$arch
+Server = http://mirrors.bfsu.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.bfsu.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.cqu.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.cqu.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.dgut.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.dgut.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirror.lzu.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.neusoft.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.neusoft.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.nju.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.nju.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirror.redrock.team/archlinux/$repo/os/$arch
+Server = https://mirror.redrock.team/archlinux/$repo/os/$arch
+Server = https://mirrors.sjtug.sjtu.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
+Server = https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch
+Server = http://mirrors.zju.edu.cn/archlinux/$repo/os/$arch
+
+
+
+adobe-source-han-sans-cn-fonts
+akonadi-calendar-tools
+akonadi-import-wizard
+akonadiconsole
+akregator
+archlinuxcn-keyring
+ark
+artikulate
+audiocd-kio
+autoconf
+automake
+base
+binutils
+bison
+blinken
+bluedevil
+bomber
+bovo
+breeze
+breeze-gtk
+cantor
+cervisia
+chromium
+cinnamon-settings-daemon
+deepin-wine-qq
+deepin-wine-tim
+deepin-wine-wechat
+dhcpcd
+dialog
+discover
+docker
+dolphin
+dolphin-plugins
+dragon
+drkonqi
+efibootmgr
+elisa
+fakeroot
+falkon
+ffmpegthumbs
+file
+filelight
+findutils
+firefox
+flex
+fsearch
+gawk
+gcc
+gettext
+git
+granatier
+grantlee-editor
+grep
+groff
+grub
+gtk2
+gtkmm
+gtkmm3
+gwenview
+gzip
+ibus
+ibus-table
+ibus-table-chinese
+intel-ucode
+intellij-idea-ultimate-edition
+itinerary
+jdk11-openjdk
+jdk8-openjdk
+juk
+k3b
+kactivitymanagerd
+kaddressbook
+kajongg
+kalarm
+kalendar
+kalgebra
+kalzium
+kamera
+kamoso
+kanagram
+kapman
+kapptemplate
+kate
+katomic
+kbackup
+kblackbox
+kblocks
+kbounce
+kbreakout
+kbruch
+kcachegrind
+kcalc
+kcharselect
+kcolorchooser
+kcron
+kde-cli-tools
+kde-dev-scripts
+kde-dev-utils
+kde-gtk-config
+kdebugsettings
+kdeconnect
+kdecoration
+kdegraphics-thumbnailers
+kdenetwork-filesharing
+kdenlive
+kdepim-addons
+kdeplasma-addons
+kdesdk-kioslaves
+kdesdk-thumbnailers
+kdevelop
+kdevelop-php
+kdf
+kdialog
+kdiamond
+keditbookmarks
+kfind
+kfloppy
+kfourinline
+kgamma5
+kgeography
+kget
+kgoldrunner
+kgpg
+khangman
+khelpcenter
+khotkeys
+kig
+kigo
+killbots
+kimagemapeditor
+kinfocenter
+kio-extras
+kio-gdrive
+kirigami-gallery
+kiriki
+kiten
+kjumpingcube
+kleopatra
+klettres
+klickety
+klines
+kmag
+kmahjongg
+kmail
+kmail-account-wizard
+kmenuedit
+kmines
+kmix
+kmousetool
+kmouth
+kmplot
+knavalbattle
+knetwalk
+knights
+knotes
+kolf
+kollision
+kolourpaint
+kompare
+konqueror
+konquest
+konsole
+kontact
+kontrast
+konversation
+kopete
+korganizer
+kpat
+krdc
+kreversi
+krfb
+kruler
+kscreen
+kscreenlocker
+kshisen
+ksirk
+ksnakeduel
+kspaceduel
+ksquares
+ksshaskpass
+ksudoku
+ksystemlog
+ksystemstats
+kteatime
+ktimer
+ktorrent
+ktouch
+ktuberling
+kturtle
+kubrick
+kwallet-pam
+kwalletmanager
+kwave
+kwayland-integration
+kwin
+kwordquiz
+kwrite
+kwrited
+layer-shell-qt
+libkscreen
+libksysguard
+libtool
+linux
+linux-firmware
+lokalize
+lskat
+m4
+make
+marble
+markdownpart
+mbox-importer
+milou
+minuet
+neofetch
+netctl
+netease-cloud-music
+network-manager-applet
+networkmanager
+noto-fonts-cjk
+ntfs-3g
+nvidia
+nvidia-utils
+okular
+open-vm-tools
+os-prober
+oxygen
+oxygen-sounds
+packagekit
+packagekit-qt5
+pacman
+palapeli
+parley
+partitionmanager
+patch
+picmi
+pim-data-exporter
+pim-sieve-editor
+pkgconf
+plasma-browser-integration
+plasma-desktop
+plasma-disks
+plasma-firewall
+plasma-integration
+plasma-nm
+plasma-pa
+plasma-sdk
+plasma-systemmonitor
+plasma-thunderbolt
+plasma-vault
+plasma-workspace
+plasma-workspace-wallpapers
+polkit-kde-agent
+powerdevil
+poxml
+print-manager
+reflector
+rocs
+sddm
+sddm-kcm
+sed
+signon-kwallet-extension
+skanlite
+skanpage
+spectacle
+step
+sudo
+svgpart
+sweeper
+systemsettings
+telepathy-kde-accounts-kcm
+telepathy-kde-approver
+telepathy-kde-auth-handler
+telepathy-kde-call-ui
+telepathy-kde-common-internals
+telepathy-kde-contact-list
+telepathy-kde-contact-runner
+telepathy-kde-desktop-applets
+telepathy-kde-filetransfer-handler
+telepathy-kde-integration-module
+telepathy-kde-send-file
+telepathy-kde-text-ui
+texinfo
+tomcat8
+ttf-arphic-ukai
+ttf-arphic-uming
+typora
+umbrello
+vim
+wget
+which
+wpa_supplicant
+wps-office-cn
+wps-office-mui-zh-cn
+wqy-bitmapfont
+wqy-microhei
+wqy-microhei-lite
+wqy-zenhei
+xdg-desktop-portal-kde
+xf86-input-vmmouse
+xf86-video-vesa
+xf86-video-vmware
+xorg-bdftopcf
+xorg-docs
+xorg-font-util
+xorg-fonts-100dpi
+xorg-fonts-75dpi
+xorg-iceauth
+xorg-mkfontscale
+xorg-server-devel
+xorg-server-xephyr
+xorg-server-xnest
+xorg-server-xvfb
+xorg-sessreg
+xorg-smproxy
+xorg-x11perf
+xorg-xauth
+xorg-xbacklight
+xorg-xcmsdb
+xorg-xcursorgen
+xorg-xdpyinfo
+xorg-xdriinfo
+xorg-xev
+xorg-xgamma
+xorg-xhost
+xorg-xinput
+xorg-xkbevd
+xorg-xkbutils
+xorg-xkill
+xorg-xlsatoms
+xorg-xlsclients
+xorg-xmodmap
+xorg-xpr
+xorg-xprop
+xorg-xrdb
+xorg-xrefresh
+xorg-xset
+xorg-xsetroot
+xorg-xvinfo
+xorg-xwayland
+xorg-xwd
+xorg-xwininfo
+xorg-xwud
+yakuake
+yay
+youdao-dict
+zanshin
+zeroconf-ioslave
+zsh
+
+https://www.cnblogs.com/sztom/p/10652624.html
+
+https://www.cnblogs.com/hurricane404/p/15220431.html
+
+mysql-workbench,安装完成后不能保存密码，需要安装这个包gnome-keyring
+
+
+mysqladmin -u root -p password "新密码" 回车 ，Enter password: 【输入原来的旧密码】
+
+
+sunloginclient安装后无法启动，root用户运行ystemctl start runsunloginclient.service
+再运行sunloginclient就可以启动了
+查看系统信息 neofetch
+
+
+分辨率调整xrandr -s 1920x1080
+
+网卡相关
+https://blog.csdn.net/weixin_42392689/article/details/116666639
+
+
+arch安装软件相关
+1.clang 大名鼎鼎的LLVM Clang C语言编译器
+sudo pacman -Sy clang
+
+2.gdb 也就是gcc的调试工具
+sudo pacman -Sy gdb
+
+3.cmake C语言构建工具
+sudo pacman -Sy cmake
+
+4.pip  python的模块工具
+sudo pacman -Sy python-pip
+
+5.kchmviewer  chm查看工具
+sudo pacman -Sy kchmviewer
+
+6.krita和gimp是类似的作图工具，和windows下的ps是一样的
+sudo pacman -Sy krita
+
+7.gimp 不多介绍和ps一样
+sudo pacman -Sy gimp
+
+8.obs-studio 录屏推流软件
+sudo pacman -Sy obs-studio
+
+10.libreoffice 中文版本
+sudo pacman -Sy libreoffice-fresh
+sudo pacman -Sy libreoffice-fresh-zh-cn
+
+11.jdk 默认最新的
+sudo pacman -Sy jdk
+当你安装多个jdk的时候设置环境变量会提醒你
+Default Java environment is already set to 'java-12-jdk'
+See 'archlinux-java help' to change it
+所以说我们只需要运行archlinux-java help这个命令就可以看到相关切换的设置了,一键切换jdk不再是梦
+
+12.go 默认最新
+sudo pacman -Sy go
+
+13.wps 金山办公软件
+sudo pacman -Sy wps-office
+sudo pacman -Sy ttf-wps-fonts
+yay -Sy wps-office-mime
+yay -Sy wps-office-mui-zh-cn
+
+14.freemind 思维导图
+sudo pacan -Sy freemind
+
+15.xmind-zen 思维导图
+yay -Sy xmind-zen(如非必要不要安装这个)
+
+16.filezilla 远程ftp工具
+sudo pacman -Sy filezilla
+
+17.drawio 类似UML之类的作图工具
+sudo pacman -Sy drawio-desktop-bin
+
+18.uget 下载管理器
+sudo pacman -Sy uget
+
+19.网易云音乐
+sudo pacman -Sy netease-cloud-music
+
+20.谷歌浏览器
+sudo pacman -Sy google-chrome
+
+21.TIM
+sudo pacman -Sy deepin.com.qq.office(qq有很多bug，用tim即可，这个就是)
+
+22.vlc播放器
+sudo pacman -Sy vlc
+
+23.mplayer命令行播放器
+sudo pacman -Sy mplayer
+
+25.smplayer 图像界面的播放器
+sudo pacman -Sy smplayer
+
+26.gpick 屏幕取色工具
+sudo pacman -Sy gpick
+
+27.htop 资源进程管理器 top命令的升级版
+sudo pacman -Sy htop
+
+28.Evolution 邮箱 强烈推荐
+sudo pacman -Sy evolution
+
+29.QQ
+sudo pacman -Sy deepin.com.qq.im(qq的bug较多，这个不用安装，因为有tim)
+
+30.微信
+yay -Sy deepin-wine-wechat
+
+31.百度网盘
+sudo pacman -Sy baidunetdisk
+
+32.teamviewer 远程控制
+sudo pacman -Sy teamviewer
+
+33.screenfetch 系统信息查看工具
+sudo pacman -Sy screenfetch
+
+34.neofetch同screenfetch
+sudo pacman -Sy neofetch
+
+35.lolcat 文本查看 也就是cat命令的升级版
+sudo pacman -Sy lolcat
+可以配合screefetch使用
+比如 screenfetch | lolcat，这条命令可以看到非常炫酷的效果
+
+36.数据库安装mariadb
+
+因为很多linux发行版都放弃了对mysql的支持（原因自行百度）转而支持mariadb（mysql的另一个分支），Archlinux就是其中之一，mariadb具有和mysql一模一样的操作命令，所以完全不用考虑迁移兼容的问题
+
+注意ArchLinux安装mysql是不可行的，不要试图安装mysql，那是不成功的
+
+    36.1.安装mariadb
+
+    sudo pacman -Sy mariadb
+
+    36.2.配置mariadb命令，创建数据库都在/var/lib/mysql/目录下面
+
+    sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+
+    36.3.开启mariadb 服务
+
+    systemctl start mariadb
+
+    36.4.初始化密码，期间有让你设置密码的选项，设置你自己的密码就行了，然后根据自己理解y/n就可，因为很多后面可以再修改
+
+    sudo /usr/bin/mysql_secure_installation
+
+    36.5.登录mariadb 和mysql命令是一样的
+
+    mysql -u root -p
+
+    36.6.设置开机自启动服务
+
+    systemctl start mariadb #手动启动
+
+    systemctl enable mariadb #开机自启动
+
+    systemctl disable mariadb #关闭自启动
+
+37.Intellij IDEA
+sudo pacman -Sy intellij-idea-ultimate-edition
+
+38.WebStorm 前端
+sudo pacman -Sy webstorm
+
+39.DataGrip 数据库
+yay -Sy datagrip
+
+40.GoLand go
+
+sudo pacman -Sy goland
+41.PyCharm python
+sudo pacman -Sy pycharm-professional
+
+42.CLion c
+sudo pacman -Sy clion
+    clion 配置工作
+    在setting->Build,Execution,Deployment->Toolchains里面
+    如果是gcc编译器
+    CMake: /bin/cmake
+    make: /bin/make
+    C Compiler: /bin/gcc
+    C++ Compiler: /bin/g++
+    Debugger: /bin/gdb
+    如果是LLVM Clang
+    CMake: /bin/cmake
+    make: /bin/make
+    C Compiler: /bin/clang
+    C++ Compiler: /bin/clang++
+    Debugger: /bin/clangd
+
+43.baidupcs 百度网盘命令行版本(推荐)
+sudo pacman -Sy baidupcs-go-bin
+输入baidupcs启动
+
+44.gitter 开发者聊天交流社区软件(未安装，感兴趣可以看看)
+sudo pacman -Sy gitter
+
+45.opera 浏览器(未安装，感兴趣可以看看)
+sudo pacman -Sy opera
+
+46.米聊  小米的社交聊天工具(未安装，感兴趣可以看看)
+yay -Sy mitalk
+
+47.vscode 微软的代码编辑器
+sudo pacman -Sy code
+
+48.atom  github为程序员打造的编辑器
+sudo pacman -Sy atom
+
+49.360压缩软件(未安装)
+yay -Sy 360zip
+
+50.360浏览器(未安装)
+yay -Sy browser360
+
+51.微信（未安装）
+yay -Sy electronic-wechat
+
+52.磁盘管理工具
+sudo pacman -S gparted
+
+53.影视处理
+yay -Sy davinci-resolve
+12为免费版本，34为studio版本可能功能更全但要付费
+
+54.声音设置相关
+sudo pacman -Sy pavucontrol
+
+
+中文字体支持
+
+谷歌noto字体集
+
+sudo pacman -S noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+
+adobe 思源 字体集
+
+sudo pacman -S adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts adobe-source-sans-pro-fonts adobe-source-serif-pro-fonts adobe-source-code-pro-fonts
+
+文泉驿 微米体 和 正黑字体
+
+sudo pacman -S wqy-microhei wqy-zenhei
+
+一些扩展字体，可装可不装
+
+sudo pacman -S ttf-liberation ttf-monaco ttf-dejavu ttf-font-awesome ttf-dejavu
+
+
+
