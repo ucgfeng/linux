@@ -1,0 +1,38 @@
+https://www.cnblogs.com/1ink/p/14900247.html
+可以参考上面的博客
+
+把字体改为中文
+sudo dpkg-reconfigure locales
+这个页面选择语言，使用空格键选中
+请选上 en_US.UTF-8、zh_CN.GBK、zh_CN.UTF-8
+选中zh_CN.UTF-8为默认语言
+执行命令下载字体
+sudo apt-get install ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy
+reboot
+
+安装五笔输入法
+apt-cache search fcitx | grep ^fcitx
+
+apt install fcitx5 fcitx5-chinese-addons fcitx5-configtool
+
+fcitx5-configtool 选择五笔
+reboot
+ctrl + space 开启输入法
+
+调整时区
+修改时区为上海
+sudo timedatectl set-timezone Asia/Shanghai
+使用和设置协调世界时间
+sudo timedatectl set-timezone UTC
+将硬件时钟设置为协调世界时间（UTC）
+sudo timedatectl set-local-rtc 0
+
+重启ntp时间同步服务，等待时间更新，一般需要3~6秒
+sudo service ntp restart 
+sleep 10s
+
+将系统时间写入到硬件时钟，防止重启系统后更改失效
+sudo hwclock -w
+
+显示时间状态
+sudo timedatectl status
