@@ -36,3 +36,20 @@ sudo hwclock -w
 
 显示时间状态
 sudo timedatectl status
+
+基础命令
+cd .. 返回上层目录
+mkdir 创建文件夹
+ls 查看 ll == ls -l查看权限 -a 查看所有文件
+touch filename 创建一个空文件
+mv filename newfilename/dir/  修改文件名称为newfilename/移动到文件夹dir/下面
+echo "要添加的内容" > newfilename  一个>代表覆盖，>>代表追加
+cp filename dir/ 把filename文件copy到dir文件夹/下面
+rm filename 删除文件filename -rf 不提示强制删除
+chmod 添加或修改权限 eg: chmod 777
+which google-chrome
+pwd 打印当前文件夹目录
+ifconfig 查看ip信息
+iwconfig 查看网卡信息
+vim i/I a/A o/O Esc :wq
+cat file 查看文件file的内容
